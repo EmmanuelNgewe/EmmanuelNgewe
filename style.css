@@ -1,0 +1,36 @@
+body,
+html{
+	width: 100%;
+	height:100%;
+}
+
+body {
+	font-family: 'EB Garamond', serif;
+}
+
+header.startup {
+	background-image: url(sheldon-thompson-CXET9y0BmkE-unsplash.jpg);
+	background-size: cover;
+	width:100%;
+	height: 100%;
+}
+
+header.startup h1 {
+	text-align: center;
+}
+
+hr {
+	max-width: 600px;
+	border-width: 3px;
+	border-color: 
+}
+
+.btn-outline-secondary {
+	background-color: #6C0404;
+	border-color: #6C0404;
+}
+
+.btn-outline-secondary.hover{
+	background-color: 321010;
+
+}
