@@ -1,36 +1,109 @@
-body,
-html{
-	width: 100%;
-	height:100%;
-}
-
-body {
-	font-family: 'EB Garamond', serif;
-}
-
-header.startup {
-	background-image: url(sheldon-thompson-CXET9y0BmkE-unsplash.jpg);
-	background-size: cover;
-	width:100%;
-	height: 100%;
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(-70deg, #d30909 1%, rgba(0, 0, 0, 0) 30%),
+            url(william-thomas-ny6tO4ItOEY-unsplash.jpg);
+    background-size: cover;
+    background-position: 20% 23%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header.startup h1 {
 	text-align: center;
 }
 
-hr {
-	max-width: 600px;
-	border-width: 3px;
-	border-color: 
+table {
+    margin: auto;
+}
+.table-fit {
+    white-space: nowrap;
+    width: 1%;
+}
+.boogaloo{
+    font-family: 'Boogaloo',
+    'cursive';
 }
 
-.btn-outline-secondary {
-	background-color: #6C0404;
-	border-color: #6C0404;
+.bold {
+    font-weight: bold;
 }
 
-.btn-outline-secondary.hover{
-	background-color: 321010;
-
+.merienda {
+    font-family: 'Merienda', cursive;
 }
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.boogaloo {
+    font-family: 'Boogaloo',
+        cursive;
+}
+
+.roboto {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+}
+
+.slabo {
+    font-family: 'Slabo 27px',
+        serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.top-margin {
+    margin-top: 40px;
+}
+
+.bottom-margin {
+    margin-bottom: 40px;
+}
+
+.text-center {
+	text-align: center;
+	color: white;
+    
+}
+
+#form {
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+    border-radius: 15px;
+    padding: 40px 20px 20px 20px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+      /* filter: blur(10px); */
+}
+
+#form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgb(255, 255, 255);
+    filter: blur(11px) saturate(200) opacity(0.9);
+}
+
+#particles-js canvas {
+	position: absolute;
+    width:100%;
+    height:100%;
+}
+
