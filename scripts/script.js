@@ -32,23 +32,6 @@ document.addEventListener('DOMContentLoaded', e => {
 
     val = val.toLowerCase()
   }
-  
-  // Add an event listener for the organisation input field
-  const organisationExists = document.querySelector('#yes-business')
-  const organisationDontExists = document.querySelector('#no-business')
-
-  const organisationQuestion = document.querySelector('#org')
-  const organisationTextArea = document.querySelector('textarea#organisation')
-  
-  organisationExists.addEventListener('click', e => {
-    organisationQuestion.style.display = 'block'
-    organisationTextArea.setAttribute('required', 1)
-  })
-
-  organisationDontExists.addEventListener('click', e => {
-    organisationQuestion.style.display = 'none'
-
-  })
 
   //   Submit the form
   const form = document.querySelector('form')
@@ -108,7 +91,7 @@ document.addEventListener('DOMContentLoaded', e => {
           )
 
           setTimeout(() => {
-            window.location = 'https://awlo.org/youthsummit'
+            window.location = ''
           }, 3000)
         }
       })
@@ -117,3 +100,19 @@ document.addEventListener('DOMContentLoaded', e => {
       })
   })
 })
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
